@@ -1,0 +1,181 @@
+.sec1 {
+  background: #ECFFEB; }
+  .sec1 .block {
+    position: relative;
+    padding: 4.0625rem 0 8.625rem;
+    z-index: 1; }
+  .sec1 .t1 {
+    margin-bottom: 0.3125rem;
+    font-family: 'Montserrat-SemiBold', 'sans-serif';
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #424242; }
+  .sec1 .t2 {
+    margin-bottom: 1.1rem;
+    font-family: 'Montserrat-Bold', 'sans-serif';
+    font-weight: 700;
+    font-size: 4.0625rem;
+    line-height: 4.0625rem;
+    color: #55A630; }
+  .sec1 .t3 {
+    margin-bottom: 3.6875rem;
+    font-family: 'Montserrat-Meduim', 'sans-serif';
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    color: #424242; }
+  .sec1 .t4 .btn {
+    height: 4.125rem;
+    width: 17.8125rem;
+    font-family: 'Montserrat-SemiBold', 'sans-serif';
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    background: transparent; }
+    .sec1 .t4 .btn.btn-green {
+      padding-top: 0.3125rem;
+      background: #55A630;
+      color: #fff;
+      margin-right: 1.25rem; }
+    .sec1 .t4 .btn.btn-transparent {
+      padding-top: 0.4375rem;
+      color: #55A630;
+      border: 0.0625rem solid #55A630; }
+  .sec1 img {
+    position: absolute;
+    bottom: 0;
+    right: -1.4375rem;
+    z-index: -1; }
+
+.sec2 .trigger-block {
+  position: relative;
+  z-index: 2;
+  margin-top: -1.4375rem;
+  background-color: #fff;
+  padding: 3.1875rem 2.5rem 2.5rem 2.9375rem;
+  -webkit-box-shadow: -0.125rem 0.125rem 1.25rem rgba(66, 66, 66, 0.15);
+          box-shadow: -0.125rem 0.125rem 1.25rem rgba(66, 66, 66, 0.15);
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem; }
+
+.sec2 .item {
+  text-align: center;
+  width: 12.1875rem; }
+  .sec2 .item .t1 {
+    margin-bottom: 0.75rem;
+    font-family: "Montserrat-Bold", "sans-serif";
+    font-weight: 800;
+    font-size: 2.8125rem;
+    line-height: 2.8125rem;
+    color: #55A630; }
+  .sec2 .item .t2 {
+    font-family: "Montserrat-Regular", "sans-serif";
+    font-weight: 400;
+    font-size: 1.4375rem;
+    line-height: 1.75rem;
+    color: #424242; }
+
+.sec2 .card-rainbow-slider .swiper-slide {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0rem 0.25rem 1.875rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0rem 0.25rem 1.875rem rgba(0, 0, 0, 0.05);
+  width: 22.5rem;
+  position: relative; }
+  .sec2 .card-rainbow-slider .swiper-slide::before {
+    content: url("../upload/icons/bird.svg");
+    position: absolute;
+    top: 1rem;
+    right: 0.875rem; }
+  .sec2 .card-rainbow-slider .swiper-slide .card {
+    padding: 0 1rem; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t1 {
+      margin-bottom: 0.875rem;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      color: #424242;
+      opacity: 0.8; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t2 {
+      margin-bottom: 1.4375rem;
+      font-weight: 600;
+      font-size: 1.875rem;
+      line-height: 100%;
+      letter-spacing: -0.0.25rem; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 1.5rem;
+      width: 10.375rem;
+      height: 2.1875rem;
+      background: #000;
+      -webkit-border-radius: 0.5625rem;
+              border-radius: 0.5625rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #FFFFFF;
+      opacity: 0.8; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t4 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      color: #424242;
+      opacity: 0.8; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t5 {
+      margin-bottom: 3.375rem;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .sec2 .card-rainbow-slider .swiper-slide .card .t5 .tt1 {
+        padding-left: 0.5625rem;
+        width: 9.1875rem;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 1.75rem;
+        color: #424242;
+        opacity: 0.8;
+        border-left: 0.125rem solid #000; }
+    .sec2 .card-rainbow-slider .swiper-slide .card .t6 {
+      margin-bottom: 1.25rem;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      color: #424242;
+      opacity: 0.8; }
+    .sec2 .card-rainbow-slider .swiper-slide .card button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 3.5rem;
+      width: 100%;
+      background: #000;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      color: #FFF; }
+    .sec2 .card-rainbow-slider .swiper-slide .card a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 3.5rem;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      color: #000; }

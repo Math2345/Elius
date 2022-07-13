@@ -1,0 +1,293 @@
+@import "vars"
+@import "_mixins/media"
+
+body
+	font-family: "Montserrat-Light", sans-serif
+
+main
+	overflow: hidden
+
+a 
+	text-decoration: none
+	font-size: 20px
+	font-weight: normal
+	display: block
+	color: #1C1E23
+
+	position: relative
+    
+
+select
+	outline: none
+
+.center
+	text-align: center
+
+
+
+
+
+@media (min-width: 300px)
+	.container
+		width: 100%
+		//padding: 0 15px
+
+	.row
+		//margin: 0 -15px
+
+	.col
+		//padding: 0 15px
+
+.container
+	position: relative
+	width: 100%
+	box-sizing: border-box
+	margin: auto
+	max-width: 1201px
+	+min-width(1200)
+		max-width: 1201px
+	+min-width(1366)
+		// width: 91%
+	+min-width(1400)
+		// width: 67%
+
+section
+	height: auto
+	//padding: 55px 0
+	+min-width(992)
+		//padding: em(127) 0
+
+.owl-animated-out
+	z-index: 1
+
+.owl-animated-in
+	z-index: 2
+
+.fadeOut
+	animation-name: fadeOut
+
+.fadeIn
+	animation-name: fadeIn
+
+@keyframes fadeOut
+	0%
+		opacity: 1
+
+	100%
+		opacity: 0
+
+@keyframes fadeIn
+	0%
+		opacity: 0
+
+	100%
+		opacity: 1
+
+.owl-dots
+	display: none
+	align-items: center
+	justify-content: center
+	.owl-dot
+		margin: 0 15px
+		&.active
+			span
+				&:before
+					opacity: 1
+		span
+			display: block
+			width: 9px
+			height: 9px
+			background-color: green
+			border-radius: 100%
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				width: 17px
+				height: 17px
+				background-color: rgba(18, 160, 156, 0.3)
+				top: -4px
+				left: -4px
+				border-radius: 100%
+				opacity: 0
+				transition: opacity .25s
+
+.owl-nav
+	display: none
+	+min-width(1366)
+		display: block
+	button
+		position: absolute
+		top: 0
+		bottom: 0
+		display: block
+		margin: auto
+		display: flex
+		align-items: center
+		justify-content: center
+		width: em(50)
+		height: em(50)
+		filter: grayscale(0)
+		transition: filter .25s
+		&.disabled
+			filter: grayscale(100%)
+		svg
+			width: 100%
+			height: 100%
+			circle
+				stroke: rgba(18, 160, 156, 0.3)
+				transition: stroke .25s
+			path
+				fill: green
+				transition: fill .25s
+		&:hover
+			circle
+				stroke: rgba(242, 124, 20, 0.3)
+			path
+				fill: orange
+	.owl-prev
+		left: -5%
+	.owl-next
+		right: -5%
+
+// Доты для карусели
+
+.dots__list
+	display: flex
+	align-items: center
+	z-index: 1
+	position: relative
+	padding-left: 15px
+	margin: 0
+	justify-content: center
+	list-style-type: none
+	display: flex
+	align-items: center
+	.owl-dot
+		display: block
+		width: 5px
+		height: 5px
+		background-color: green
+		border-radius: 100%
+		margin: 0 15px
+		padding: 0
+		border: 0
+		cursor: pointer
+		position: relative
+		transition: transform .25s
+		&:before
+			content: ""
+			position: absolute
+			width: 9px
+			height: 9px
+			background-color: rgba(18, 160, 156, 0.3)
+			z-index: -1
+			top: -2px
+			left: -2px
+			border-radius: 100%
+			opacity: 0
+			transition: opacity .25s
+		&.active
+			transform: scale(2)
+			&:before
+				opacity: 1
+		&.next, &.prev
+			transform: scale(1.8)
+		&.next1, &.prev1
+			transform: scale(1.7)
+	&.white
+		.owl-dot
+			background-color: white
+			&:before
+				background-color: rgba(255, 255, 255, 0.3)
+
+.animBlock
+	transition: 250ms ease-in-out
+	top: 0
+	position: relative
+	&:hover
+		top: -15px
+
+.animBR
+	border-radius: 50% !important
+
+.animBGimg
+	&.img
+		border-radius: 30px
+		overflow: hidden
+	img
+		transition: 1s linear
+		width: 100%
+		height: 100%
+		&:hover
+			transform: scale(1.1)
+
+.animBlockBGimg
+	transition: 1s linear !important
+	background-size: 115% !important
+	&:hover
+		background-size: 130% !important
+
+.animBtn
+	transition: .25s linear
+	&:hover
+		transform: scale(1.05)
+
+
+/* FlexBox */
+
+.df 
+  display: flex
+
+
+.fr 
+  flex-direction: row
+
+
+.fc 
+  flex-direction: column
+
+
+
+.jb 
+  justify-content: space-between
+
+
+.jc 
+  justify-content: center
+
+
+.je 
+  justify-content: flex-end
+
+
+.vt 
+  align-items: flex-start
+
+
+.vc 
+  align-items: center
+
+
+.vb 
+  align-items: flex-end
+
+
+.it 
+  align-self: flex-start
+
+
+.ic 
+  align-self: center
+
+
+.ib 
+  align-self: flex-end
+
+
+.fw 
+  flex-wrap: wrap
+
+
+.fwn 
+  flex-wrap: nowrap
